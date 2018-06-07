@@ -10,7 +10,7 @@ public class FloorMovement : MonoBehaviour {
 	public float speed;
 	public bool moveAtStart = false;
 
-	void Update () {
+	void FixedUpdate () {
 				if(transform.position.z <= maxZPosition)
 		{
 			transform.position = new Vector3(nextFloor.transform.position.x, nextFloor.transform.position.y, nextFloor.transform.position.z + 99);
